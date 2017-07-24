@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_message_content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="right"
+    android:gravity="right|bottom"
+    android:layout_margin="2dp">
+
+    <LinearLayout
+        android:id="@+id/ll_item_message_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:background="@drawable/back_item_message_own">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="end">
+
+            <TextView
+                android:id="@+id/tv_chat_username"
+                style="?android:textAppearanceMedium"
+                android:textColor="@color/colorUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.7"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:text="name"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/tv_chat_date"
+                style="?android:textAppearanceMedium"
+                android:textColor="@color/colorDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="end"
+                android:textSize="12sp"
+                android:text="00:00"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_chat_message"
+            style="?android:textAppearanceMedium"
+            android:textColor="@color/colorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="m"
+            android:layout_gravity="end"/>
+
+    </LinearLayout>
+
+</LinearLayout>
